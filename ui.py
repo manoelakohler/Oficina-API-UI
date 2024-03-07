@@ -13,9 +13,10 @@ app.layout = html.Div([
     dcc.Upload(
         id='upload-data',
         children=html.Div(['Arraste e solte ou ', html.A('selecione um arquivo CSV')]),
-        multiple=False
+        multiple=False,
+        style={'margin-bottom': '10px'}
     ),
-    html.Button('Fazer Previsões', id='btn-predict'),
+    html.Button('Fazer Previsões', id='btn-predict', style={'margin-bottom': '10px'}),
     html.Div(id='output-predictions')
 ])
 
