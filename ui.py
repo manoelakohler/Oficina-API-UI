@@ -56,6 +56,6 @@ def update_predictions(n_clicks, contents):
     ])
 
 
-if __name__ == '__main__':
-    if os.environ.get('ENVIRONMENT') != 'production':
-        app.run_server(debug=True)
+# if __name__ == '__main__':
+#     if os.environ.get('ENVIRONMENT') != 'production':
+#         app.run_server(debug=True)
