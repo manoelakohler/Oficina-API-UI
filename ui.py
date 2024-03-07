@@ -1,3 +1,4 @@
+import os
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
@@ -56,4 +57,5 @@ def update_predictions(n_clicks, contents):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    if os.environ.get('ENVIRONMENT') != 'production':
+        app.run_server(debug=True)
